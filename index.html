@@ -1,212 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LearnLink UI Preview</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="app-shell">
-    <header class="hero">
-      <div>
-        <p class="eyebrow">DAY 2 – Deep Feature UI Representation</p>
-        <h1>LearnLink preview</h1>
-        <p class="subtitle">Interactive resource sharing, course recommendations, study circles, and activity overview in one page.</p>
-      </div>
-      <div class="hero-badge">Live UI Preview</div>
-    </header>
-
-    <section class="panel">
-      <div class="panel-header">
-        <h2>Resource Sharing</h2>
-        <p>File uploads, tags, ratings, and quick metrics.</p>
-      </div>
-      <div class="card-grid resource-grid">
-        <article class="resource-card">
-          <div class="resource-meta">
-            <span class="resource-type">PDF</span>
-            <span class="tag">Machine Learning</span>
-          </div>
-          <h3>Introduction to Neural Nets</h3>
-          <div class="rating-row">
-            <span class="stars">★★★★★</span>
-            <span class="rating-value">4.8</span>
-          </div>
-          <div class="resource-footer">
-            <span>Downloads: 1.2K</span>
-            <button class="download-btn">Download</button>
-          </div>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-meta">
-            <span class="resource-type">Video</span>
-            <span class="tag">Design</span>
-          </div>
-          <h3>UI Design Patterns</h3>
-          <div class="rating-row">
-            <span class="stars">★★★★☆</span>
-            <span class="rating-value">4.2</span>
-          </div>
-          <div class="resource-footer">
-            <span>Downloads: 940</span>
-            <button class="download-btn">Download</button>
-          </div>
-        </article>
-
-        <article class="resource-card">
-          <div class="resource-meta">
-            <span class="resource-type">Slide</span>
-            <span class="tag">Blockchain</span>
-          </div>
-          <h3>Decentralized Systems</h3>
-          <div class="rating-row">
-            <span class="stars">★★★★☆</span>
-            <span class="rating-value">4.4</span>
-          </div>
-          <div class="resource-footer">
-            <span>Downloads: 720</span>
-            <button class="download-btn">Download</button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="panel">
-      <div class="panel-header">
-        <h2>Course Recommendations</h2>
-        <p>Curated courses with community ratings and voting.</p>
-      </div>
-      <div class="card-grid course-grid">
-        <article class="course-card">
-          <div class="course-top">
-            <div>
-              <h3>Advanced JavaScript</h3>
-              <p class="provider">by CodeCraft Academy</p>
-            </div>
-            <div class="voting">
-              <button aria-label="Upvote">▲</button>
-              <span>324</span>
-              <button aria-label="Downvote">▼</button>
-            </div>
-          </div>
-          <div class="course-rating">Rating: 4.9 / 5</div>
-        </article>
-
-        <article class="course-card">
-          <div class="course-top">
-            <div>
-              <h3>Product Management</h3>
-              <p class="provider">by Growth Labs</p>
-            </div>
-            <div class="voting">
-              <button aria-label="Upvote">▲</button>
-              <span>210</span>
-              <button aria-label="Downvote">▼</button>
-            </div>
-          </div>
-          <div class="course-rating">Rating: 4.7 / 5</div>
-        </article>
-
-        <article class="course-card">
-          <div class="course-top">
-            <div>
-              <h3>Data Science Essentials</h3>
-              <p class="provider">by LearnSphere</p>
-            </div>
-            <div class="voting">
-              <button aria-label="Upvote">▲</button>
-              <span>458</span>
-              <button aria-label="Downvote">▼</button>
-            </div>
-          </div>
-          <div class="course-rating">Rating: 5.0 / 5</div>
-        </article>
-      </div>
-    </section>
-
-    <section class="panel">
-      <div class="panel-header">
-        <h2>Study Circles</h2>
-        <p>Groups, members, schedules, and join actions.</p>
-      </div>
-      <div class="card-grid circles-grid">
-        <article class="circle-card">
-          <div class="circle-header">
-            <h3>AI Study Squad</h3>
-            <button class="join-btn">Join</button>
-          </div>
-          <p class="circle-meta">Members: 18 | Weekly sessions</p>
-          <p class="circle-schedule">Next session: Tue 7:00 PM</p>
-        </article>
-
-        <article class="circle-card">
-          <div class="circle-header">
-            <h3>Design Sprint Crew</h3>
-            <button class="join-btn">Join</button>
-          </div>
-          <p class="circle-meta">Members: 12 | Bi-weekly sessions</p>
-          <p class="circle-schedule">Next session: Thu 5:30 PM</p>
-        </article>
-
-        <article class="circle-card">
-          <div class="circle-header">
-            <h3>Study Circle: Finance</h3>
-            <button class="join-btn">Join</button>
-          </div>
-          <p class="circle-meta">Members: 24 | Weekend sessions</p>
-          <p class="circle-schedule">Next session: Sat 10:00 AM</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="panel split-panel">
-      <div class="notifications-panel">
-        <div class="panel-header">
-          <h2>Notifications</h2>
-          <p>Recent alerts and updates.</p>
-        </div>
-        <div class="drawer">
-          <div class="notice active">
-            <span class="notice-title">New resource added</span>
-            <p>“Blockchain Basics” uploaded by Nina.</p>
-          </div>
-          <div class="notice">
-            <span class="notice-title">Course recommendation</span>
-            <p>Suggested: “Leadership Essentials”.</p>
-          </div>
-          <div class="notice">
-            <span class="notice-title">Session reminder</span>
-            <p>AI Study Squad starts in 45 minutes.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnLink Maintenance UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <span class="eyebrow">Maintenance made simple</span>
+          <h1>Tired of untracked maintenance issues?</h1>
+          <p>
+            Stop losing time in WhatsApp chains and manual logs. Raise complaints,
+            track progress, and get things resolved with one centralized platform.
+          </p>
+          <div class="hero-actions">
+            <a href="#complaint-flow" class="btn btn-primary">Raise Complaint</a>
+            <a href="#roles-overview" class="btn btn-secondary">Track Issue</a>
           </div>
         </div>
-      </div>
 
-      <div class="activity-panel">
-        <div class="panel-header">
-          <h2>Activity Feed</h2>
-          <p>Live chat preview and recent actions.</p>
+        <div class="hero-visual">
+          <div class="apartment-card">
+            <div class="building-icon">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <rect x="10" y="18" width="44" height="38" rx="4" fill="#ffffff" opacity="0.95" />
+                <path d="M14 18V10h36v8" fill="none" stroke="#2a3e54" stroke-width="3" stroke-linecap="round" />
+                <path d="M22 30h6M36 30h6M22 38h6M36 38h6M22 46h6M36 46h6" fill="none" stroke="#2a3e54" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="visual-stats">
+              <div class="stat-chip">
+                <span class="stat-icon">💧</span>
+                <span>Plumbing issue raised</span>
+              </div>
+              <div class="stat-chip">
+                <span class="stat-icon">⚡</span>
+                <span>Electric request assigned</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="activity-feed">
-          <div class="activity-item">
-            <span class="activity-user">Mia</span>
-            <span class="activity-action">posted a comment in <strong>AI Study Squad</strong></span>
-            <span class="activity-time">2m ago</span>
+      </section>
+
+      <section class="story-section">
+        <div class="story-header">
+          <span class="eyebrow">Problem → Solution</span>
+          <h2>From manual confusion to a unified maintenance experience</h2>
+        </div>
+        <div class="story-grid">
+          <div class="story-card story-problem">
+            <h3>Before: Pain points</h3>
+            <ul>
+              <li><span class="icon">📝</span>Manual tracking across spreadsheets</li>
+              <li><span class="icon">💬</span>WhatsApp confusion and missed updates</li>
+              <li><span class="icon">⏳</span>Delays in issue assignment and follow-up</li>
+            </ul>
           </div>
-          <div class="activity-item">
-            <span class="activity-user">Jon</span>
-            <span class="activity-action">upvoted “Design Thinking”</span>
-            <span class="activity-time">12m ago</span>
-          </div>
-          <div class="activity-item">
-            <span class="activity-user">Sara</span>
-            <span class="activity-action">shared a new PDF</span>
-            <span class="activity-time">30m ago</span>
+          <div class="story-card story-solution">
+            <h3>After: Centralized system</h3>
+            <ul>
+              <li><span class="icon">🏢</span>One dashboard for all complaints</li>
+              <li><span class="icon">⚙️</span>Automatic assignment and status tracking</li>
+              <li><span class="icon">✅</span>Faster resolution with clear accountability</li>
+            </ul>
+            <div class="feature-icons">
+              <div><span>🚰</span><small>Plumbing</small></div>
+              <div><span>💡</span><small>Electrical</small></div>
+              <div><span>🛡️</span><small>Security</small></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
-</body>
+      </section>
+
+      <section class="roles-overview" id="roles-overview">
+        <div class="section-header">
+          <span class="eyebrow">User Roles</span>
+          <h2>Who does what in the maintenance workflow</h2>
+        </div>
+        <div class="role-cards">
+          <article class="role-card">
+            <div class="role-top">
+              <h3>Resident</h3>
+            </div>
+            <ul class="role-list">
+              <li>Raise complaints instantly</li>
+              <li>View issue status</li>
+              <li>Share feedback after resolution</li>
+            </ul>
+            <div class="role-details">
+              <strong>Resident tools:</strong>
+              <ul>
+                <li>Photo upload</li>
+                <li>Priority selection</li>
+                <li>Notification alerts</li>
+              </ul>
+            </div>
+          </article>
+          <article class="role-card">
+            <div class="role-top">
+              <h3>Admin</h3>
+            </div>
+            <ul class="role-list">
+              <li>Assign issues to staff</li>
+              <li>Monitor resolution progress</li>
+              <li>Approve completion reports</li>
+            </ul>
+            <div class="role-details">
+              <strong>Admin tools:</strong>
+              <ul>
+                <li>Overview dashboard</li>
+                <li>Priority queue</li>
+                <li>Resident communication</li>
+              </ul>
+            </div>
+          </article>
+          <article class="role-card">
+            <div class="role-top">
+              <h3>Maintenance Staff</h3>
+            </div>
+            <ul class="role-list">
+              <li>Accept assigned jobs</li>
+              <li>Update progress status</li>
+              <li>Mark issues resolved</li>
+            </ul>
+            <div class="role-details">
+              <strong>Staff tools:</strong>
+              <ul>
+                <li>Task list view</li>
+                <li>Mobile updates</li>
+                <li>Feedback capture</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="timeline-section" id="complaint-flow">
+        <div class="section-header">
+          <span class="eyebrow">Complaint Lifecycle</span>
+          <h2>Visualize the flow from reporting to feedback</h2>
+        </div>
+        <div class="timeline-shell">
+          <div class="timeline-line"></div>
+          <div class="timeline-step completed">
+            <div class="step-icon">📨</div>
+            <div class="step-label">Raise complaint</div>
+          </div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-step completed">
+            <div class="step-icon">🧑‍⚖️</div>
+            <div class="step-label">Assign</div>
+          </div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-step in-progress">
+            <div class="step-icon">⚙️</div>
+            <div class="step-label">In Progress</div>
+          </div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-step">
+            <div class="step-icon">✅</div>
+            <div class="step-label">Resolved</div>
+          </div>
+          <div class="timeline-arrow">→</div>
+          <div class="timeline-step">
+            <div class="step-icon">💬</div>
+            <div class="step-label">Feedback</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
