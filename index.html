@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnLink UI Preview</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">DAY 2 – Deep Feature UI Representation</p>
+        <h1>LearnLink preview</h1>
+        <p class="subtitle">Interactive resource sharing, course recommendations, study circles, and activity overview in one page.</p>
+      </div>
+      <div class="hero-badge">Live UI Preview</div>
+    </header>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Resource Sharing</h2>
+        <p>File uploads, tags, ratings, and quick metrics.</p>
+      </div>
+      <div class="card-grid resource-grid">
+        <article class="resource-card">
+          <div class="resource-meta">
+            <span class="resource-type">PDF</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+          <h3>Introduction to Neural Nets</h3>
+          <div class="rating-row">
+            <span class="stars">★★★★★</span>
+            <span class="rating-value">4.8</span>
+          </div>
+          <div class="resource-footer">
+            <span>Downloads: 1.2K</span>
+            <button class="download-btn">Download</button>
+          </div>
+        </article>
+
+        <article class="resource-card">
+          <div class="resource-meta">
+            <span class="resource-type">Video</span>
+            <span class="tag">Design</span>
+          </div>
+          <h3>UI Design Patterns</h3>
+          <div class="rating-row">
+            <span class="stars">★★★★☆</span>
+            <span class="rating-value">4.2</span>
+          </div>
+          <div class="resource-footer">
+            <span>Downloads: 940</span>
+            <button class="download-btn">Download</button>
+          </div>
+        </article>
+
+        <article class="resource-card">
+          <div class="resource-meta">
+            <span class="resource-type">Slide</span>
+            <span class="tag">Blockchain</span>
+          </div>
+          <h3>Decentralized Systems</h3>
+          <div class="rating-row">
+            <span class="stars">★★★★☆</span>
+            <span class="rating-value">4.4</span>
+          </div>
+          <div class="resource-footer">
+            <span>Downloads: 720</span>
+            <button class="download-btn">Download</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Course Recommendations</h2>
+        <p>Curated courses with community ratings and voting.</p>
+      </div>
+      <div class="card-grid course-grid">
+        <article class="course-card">
+          <div class="course-top">
+            <div>
+              <h3>Advanced JavaScript</h3>
+              <p class="provider">by CodeCraft Academy</p>
+            </div>
+            <div class="voting">
+              <button aria-label="Upvote">▲</button>
+              <span>324</span>
+              <button aria-label="Downvote">▼</button>
+            </div>
+          </div>
+          <div class="course-rating">Rating: 4.9 / 5</div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-top">
+            <div>
+              <h3>Product Management</h3>
+              <p class="provider">by Growth Labs</p>
+            </div>
+            <div class="voting">
+              <button aria-label="Upvote">▲</button>
+              <span>210</span>
+              <button aria-label="Downvote">▼</button>
+            </div>
+          </div>
+          <div class="course-rating">Rating: 4.7 / 5</div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-top">
+            <div>
+              <h3>Data Science Essentials</h3>
+              <p class="provider">by LearnSphere</p>
+            </div>
+            <div class="voting">
+              <button aria-label="Upvote">▲</button>
+              <span>458</span>
+              <button aria-label="Downvote">▼</button>
+            </div>
+          </div>
+          <div class="course-rating">Rating: 5.0 / 5</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Study Circles</h2>
+        <p>Groups, members, schedules, and join actions.</p>
+      </div>
+      <div class="card-grid circles-grid">
+        <article class="circle-card">
+          <div class="circle-header">
+            <h3>AI Study Squad</h3>
+            <button class="join-btn">Join</button>
+          </div>
+          <p class="circle-meta">Members: 18 | Weekly sessions</p>
+          <p class="circle-schedule">Next session: Tue 7:00 PM</p>
+        </article>
+
+        <article class="circle-card">
+          <div class="circle-header">
+            <h3>Design Sprint Crew</h3>
+            <button class="join-btn">Join</button>
+          </div>
+          <p class="circle-meta">Members: 12 | Bi-weekly sessions</p>
+          <p class="circle-schedule">Next session: Thu 5:30 PM</p>
+        </article>
+
+        <article class="circle-card">
+          <div class="circle-header">
+            <h3>Study Circle: Finance</h3>
+            <button class="join-btn">Join</button>
+          </div>
+          <p class="circle-meta">Members: 24 | Weekend sessions</p>
+          <p class="circle-schedule">Next session: Sat 10:00 AM</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel split-panel">
+      <div class="notifications-panel">
+        <div class="panel-header">
+          <h2>Notifications</h2>
+          <p>Recent alerts and updates.</p>
+        </div>
+        <div class="drawer">
+          <div class="notice active">
+            <span class="notice-title">New resource added</span>
+            <p>“Blockchain Basics” uploaded by Nina.</p>
+          </div>
+          <div class="notice">
+            <span class="notice-title">Course recommendation</span>
+            <p>Suggested: “Leadership Essentials”.</p>
+          </div>
+          <div class="notice">
+            <span class="notice-title">Session reminder</span>
+            <p>AI Study Squad starts in 45 minutes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-panel">
+        <div class="panel-header">
+          <h2>Activity Feed</h2>
+          <p>Live chat preview and recent actions.</p>
+        </div>
+        <div class="activity-feed">
+          <div class="activity-item">
+            <span class="activity-user">Mia</span>
+            <span class="activity-action">posted a comment in <strong>AI Study Squad</strong></span>
+            <span class="activity-time">2m ago</span>
+          </div>
+          <div class="activity-item">
+            <span class="activity-user">Jon</span>
+            <span class="activity-action">upvoted “Design Thinking”</span>
+            <span class="activity-time">12m ago</span>
+          </div>
+          <div class="activity-item">
+            <span class="activity-user">Sara</span>
+            <span class="activity-action">shared a new PDF</span>
+            <span class="activity-time">30m ago</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
